@@ -9,6 +9,8 @@ wio_link_key = "efe19ae9752add26d614d87cacd97f45"
 ws = create_connection(wio_link_server)
 ws.send(wio_link_key)
 print "link to pion one sensor."
+requests.post("https://cn.iot.seeed.cc/v1/node/GroveServo/angle/90?access_token=efe19ae9752add26d614d87cacd97f45")
+requests.post("https://cn.iot.seeed.cc/v1/node/GroveLedWs2812/clear/40/008000?access_token=efe19ae9752add26d614d87cacd97f45")
 
 while True:
     print "Receiving..."
